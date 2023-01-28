@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="callService"
+		class="com.learn.spring.looslyCoupledEg.CallService" />
+	<bean id="ringToneService"
+		class="com.learn.spring.looslyCoupledEg.RingToneService" />
+
+	<bean id="DataService"
+		class="com.learn.spring.looslyCoupledEg.DataService" />
+		
+		
+		
+	<bean id="airtelService" class="com.learn.spring.looslyCoupledEg.Airtel">
+		<property name="service" ref="callService"/>
+	</bean>	
+
+</beans>
