@@ -1,0 +1,12 @@
+Bean life cycle
+
+
+1. container creating bean 
+2. dependency injected to the container
+3. init method - postConstruct() / init-method() xml / InitializingBean interface - afterPropertySet()
+4. destroy () - preDestroy() / destroy-method() xml / DisposableBean interface - destroy()
+
+
+
+
+
