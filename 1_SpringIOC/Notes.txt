@@ -1,0 +1,11 @@
+Inversion of Control
+====================
+
+Spring  IOC - Manage Bean life cycle
+-> creating the Bean
+-> managing the Bean
+-> initialization and destruction
+
+
+Spring Bean
+-> Object which is given by spring IOC is called bean 
