@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="stu1" class="com.learn.spring.looslyCoupledShow.Student">
+		<property name="cheat" ref="scienceCheater" />
+	</bean>
+
+	<bean id="mathCheater" class="com.learn.spring.looslyCoupledShow.MathCheat" />
+
+	<bean id="scienceCheater" class="com.learn.spring.looslyCoupledShow.ScienceCheat" />
+
+</beans>
