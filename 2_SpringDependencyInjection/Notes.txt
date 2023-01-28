@@ -1,0 +1,40 @@
+Dependency Injection
+====================
+
+A class will have dependencies like fields and object
+
+eg:
+
+class Me{
+
+	private String name;   --> dependencies
+	private int age;  --> dependencies
+	private Address address;  --> dependencies
+}
+
+
+Spring DI - dependency injection are used to inject the value on two ways
+
+1. Setter injection
+2. Constructor injection
+
+xml bean config
+
+eg:
+xml config files
+----------------->
+<!-- Constructor inject - Dependency injections -->
+	<bean id="ravi" class="com.learn.spring.DI.consructor.Student">
+		<constructor-arg name="name" value="Ravindar B" />
+		<constructor-arg name="id" value="01" />
+	</bean>
+
+	<!-- Constructor inject - Dependency injections -->
+	<bean id="jashwin" class="com.learn.spring.DI.consructor.Student">
+		<constructor-arg name="id" value="02" type="int"/>
+	</bean>
+
+	<!-- Constructor inject - Dependency injections -->
+	<bean id="virat" class="com.learn.spring.DI.consructor.Student">
+		<constructor-arg name="name" value="Jashwin" />
+	</bean>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- 	Setter inject - Dependency injections  -->
+	<bean id="ravi" class="com.learn.spring.DI.Student" >
+		<property name="name" value="Ravindar B"/>
+		<property name="id" value="01"/>
+	</bean>
+
+<!-- 	Setter inject - Dependency injections  -->
+	<bean id="jashwin" class="com.learn.spring.DI.Student" >
+		<property name="name" value="Jashwin R"/>
+		<property name="id" value="02"/>
+	</bean>
+	
+</beans>

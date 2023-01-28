@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Constructor inject - Dependency injections -->
+	<bean id="ravi" class="com.learn.spring.DI.consructor.Student">
+		<constructor-arg name="name" value="Ravindar B" />
+		<constructor-arg name="id" value="01" />
+	</bean>
+
+	<!-- Constructor inject - Dependency injections -->
+	<bean id="jashwin" class="com.learn.spring.DI.consructor.Student">
+		<constructor-arg name="id" value="02" type="int"/>
+	</bean>
+
+	<!-- Constructor inject - Dependency injections -->
+	<bean id="virat" class="com.learn.spring.DI.consructor.Student">
+		<constructor-arg name="name" value="Jashwin" />
+	</bean>
+
+</beans>
