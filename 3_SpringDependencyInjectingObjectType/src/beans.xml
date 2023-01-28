@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="genset" class="com.spring.learn.di.refType.Electronics">
+		<property name="electricity" ref="ec" />
+	</bean>
+
+	<bean id="ec" class="com.spring.learn.di.refType.Electricity">
+		<constructor-arg name="voltage" value="240" />
+	</bean>
+
+
+	<bean id="genset2" class="com.spring.learn.di.refType.Electronics">
+		<property name="electricity" ref="ec" />
+	</bean>
+
+</beans>
